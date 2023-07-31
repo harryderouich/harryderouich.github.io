@@ -1,0 +1,9 @@
+/* Homepage */
+.homepage-cards {
+    display:flex;
+    justify-content: center;
+}
+.homepage-cards .card {
+    margin: 0 auto;
+}
+
