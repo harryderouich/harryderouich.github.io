@@ -1,0 +1,507 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Harry Derouich · CV</title>
+    <meta name="description" content="CV / Resume for Harry Derouich – Computer Science student and software/web developer.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #2563eb; /* blue-600 */
+        }
+
+        body {
+            scroll-behavior: smooth
+        }
+
+        .gradient-bar {
+            height: 6px;
+            background: linear-gradient(90deg,var(--accent),#22c55e,#eab308,#ef4444,#8b5cf6)
+        }
+
+        .avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid rgba(0,0,0,.1)
+        }
+
+        .section-title {
+            font-weight: 700;
+            letter-spacing: .2px
+        }
+
+        .badge-skill {
+            font-weight: 500
+        }
+
+        .muted {
+            opacity: .85
+        }
+
+        .chip {
+            border: 1px solid rgba(0,0,0,.08);
+            padding: .35rem .6rem;
+            border-radius: 999px;
+            font-size: .85rem;
+            background: rgba(0,0,0,.03)
+        }
+
+        .timeline {
+            position: relative
+        }
+
+            .timeline::before {
+                content: "";
+                position: absolute;
+                left: .75rem;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background: rgba(0,0,0,.08)
+            }
+
+        .t-item {
+            position: relative;
+            padding-left: 2.25rem
+        }
+
+            .t-item::before {
+                content: "";
+                position: absolute;
+                left: .2rem;
+                top: .5rem;
+                width: .9rem;
+                height: .9rem;
+                background: var(--accent);
+                border-radius: 50%;
+                box-shadow: 0 0 0 3px rgba(37,99,235,.15)
+            }
+
+        .link-underline {
+            text-decoration: none;
+            border-bottom: 1px dashed currentColor;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #0b0d10;
+                color: #e5e7eb
+            }
+
+            .chip {
+                background: rgba(255,255,255,.05);
+                border-color: rgba(255,255,255,.12)
+            }
+
+            .timeline::before {
+                background: rgba(255,255,255,.12)
+            }
+
+            .t-item::before {
+                box-shadow: 0 0 0 3px rgba(37,99,235,.35)
+            }
+
+            .muted {
+                opacity: .9
+            }
+        }
+
+        @media print {
+            .no-print {
+                display: none !important
+            }
+
+            body {
+                font-size: 11pt
+            }
+
+            .gradient-bar {
+                display: none
+            }
+
+            a[href]::after {
+                content: ""
+            }
+
+            .chip {
+                border: 1px solid #bbb
+            }
+
+            .container {
+                max-width: 100% !important
+            }
+
+            .card {
+                box-shadow: none !important
+            }
+        }
+    </style>
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Harry Derouich",
+          "url": "https://deroui.ch",
+          "sameAs": ["https://deroui.ch/portfolio"],
+          "knowsAbout": ["Computer Science","Software Engineering","Web Development","Digital Marketing","Data Analysis"],
+          "alumniOf": [{"@type":"CollegeOrUniversity","name":"Anglia Ruskin University"}]
+        }
+    </script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#cv-nav" data-bs-smooth-scroll="true" tabindex="0">
+    <div class="gradient-bar"></div>
+    <nav id="cv-nav" class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand fw-semibold" href="#top">Harry Derouich</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navItems">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-semibold">
+                    <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="top" class="py-5">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 col-lg-8">
+                    <h1 class="display-5 fw-bold mb-2">Harry Derouich</h1>
+                    <p class="lead mb-3">Computer Science Student · Web/Software Developer · Digital Marketing</p>
+                    <div class="d-flex flex-wrap gap-2 small">
+                        <span class="chip"><strong>Location:</strong> 1 Foster Lane, Swaffham Prior, Cambridgeshire, CB25 0FA</span>
+                        <a id="emailLink" class="chip link-underline" href="#" aria-label="email">Email</a>
+                        <a class="chip link-underline" href="https://deroui.ch" target="_blank" rel="noopener">deroui.ch</a>
+                        <a class="chip link-underline" href="#" onclick="window.print()">Print / Save as PDF</a>
+                        <noscript class="text-muted">Enable JavaScript to reveal email</noscript>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-lg-end">
+                    <div class="small text-muted">Updated: <span id="updated"></span></div>
+                </div>
+            </div>
+    </header>
+
+    <main class="pb-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-12 col-lg-8">
+                    <!-- Profile -->
+                    <section id="profile" class="mb-4">
+                        <h2 class="h4 section-title">Profile</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <p class="mb-0">Dedicated Computer Science student at Anglia Ruskin University with expertise in web development, digital marketing, and data analysis. Over the course of almost a decade in both freelance and corporate settings, I have developed strong skills in strategic planning and delivering complex technical solutions. Eager to apply my software engineering skills, including proficiency in C#, Java, Python and Linux, to contribute to impactful projects and grow within a dynamic and innovative team.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Education -->
+                    <section id="education" class="mb-4">
+                        <h2 class="h4 section-title">Education</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="timeline">
+                                    <div class="t-item mb-4">
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <h3 class="h6 mb-1">BSc Computer Science – Anglia Ruskin University</h3>
+                                            <span class="small text-muted">Sep 2023 – Present</span>
+                                        </div>
+                                        <ul class="mb-1 small">
+                                            <li><strong>First Year (Completed):</strong> Introduction to Programming (73%), Computer Systems (69%), Operating Systems (84%), Software Principles (74%), Core Mathematics for Computing (93%).</li>
+                                            <li><strong>Second Year (Completed):</strong> Software Engineering (83%), Database Design &amp; Implementation (80%), AI &amp; The Future: A Threat to Humanity? (60%), Algorithm Analysis and Data Structures (93%), Network Routing (81%), Digital Security (77%), Computing Research Methodologies (77%).</li>
+                                        </ul>
+                                    </div>
+                                    <div class="t-item mb-4">
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <h3 class="h6 mb-1">A-Level Mathematics – Oxford Online Learning (Distance)</h3>
+                                            <span class="small text-muted">Oct 2022 – Jul 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="t-item mb-4">
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <h3 class="h6 mb-1">3AAA Cambridge Academy</h3>
+                                            <span class="small text-muted">Sep 2014 – Aug 2016</span>
+                                        </div>
+                                        <p class="small mb-1">Level 3 Diploma in Web &amp; Social Media; Level 3 Diploma in Digital Marketing</p>
+                                    </div>
+                                    <div class="t-item mb-4">
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <h3 class="h6 mb-1">Long Road Sixth Form College (AS Levels)</h3>
+                                            <span class="small text-muted">Sep 2014 – Jul 2015</span>
+                                        </div>
+                                        <p class="small mb-1">Computing, Film Studies, Media Studies</p>
+                                    </div>
+                                    <div class="t-item">
+                                        <div class="d-flex justify-content-between flex-wrap">
+                                            <h3 class="h6 mb-1">Soham Village College (GCSEs)</h3>
+                                            <span class="small text-muted">Sep 2009 – Jul 2014</span>
+                                        </div>
+                                        <p class="small mb-0">12 GCSEs including B and above in English, Maths, Statistics, and Sciences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Projects -->
+                    <section id="projects" class="mb-4">
+                        <h2 class="h4 section-title">Projects</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="mb-3">
+                                    <h3 class="h6 mb-1">Web Portfolio</h3>
+                                    <a class="small link-underline" href="https://deroui.ch/portfolio" target="_blank" rel="noopener">deroui.ch/portfolio</a>
+                                    <p class="small mb-0">Developed a range of web projects including eCommerce sites and informational platforms, showcasing web development, data management, and UX for clients across various industries.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h3 class="h6 mb-1">Together Culture CRM – C#</h3>
+                                    <a class="small link-underline" href="https://deroui.ch/tgcrm" target="_blank" rel="noopener">deroui.ch/tgcrm</a>
+                                    <p class="small mb-0">Led a small-team project for a live client brief: produced use-case diagrams, EERD, database schema, and contributed the majority of the code for a GUI-based CRM.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h3 class="h6 mb-1">Skystone Certificate Generator – Java</h3>
+                                    <a class="small link-underline" href="https://deroui.ch/skystone" target="_blank" rel="noopener">deroui.ch/skystone</a>
+                                    <p class="small mb-0">Collaborative planning (wireframes, use cases), then solo implementation of a console application based on shared designs.</p>
+                                </div>
+                                <div class="mb-3">
+                                    <h3 class="h6 mb-1">CarSales Application – C</h3>
+                                    <a class="small link-underline" href="https://deroui.ch/carsales" target="_blank" rel="noopener">deroui.ch/carsales</a>
+                                    <p class="small mb-0">Console-based car sales management app demonstrating procedural programming fundamentals.</p>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1">windPredict – Python</h3>
+                                    <a class="small link-underline" href="https://deroui.ch/windpredict" target="_blank" rel="noopener">deroui.ch/windpredict</a>
+                                    <p class="small mb-0">Web-scraped BBC Weather data, performed EDA on wind speed, built visualisations and prepared features for predictive use to showcase technical skills and analytical ability.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Experience -->
+                    <section id="experience" class="mb-4">
+                        <h2 class="h4 section-title">Experience</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <h3 class="h6 mb-1">Gateway Qualifications, Colchester/Remote — <span class="fw-semibold">XXXXXX Intern</span></h3>
+                                        <span class="small text-muted">May 2025 – Aug 2025</span>
+                                    </div>
+                                    <p class="small mb-0">Description TBC</p>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <h3 class="h6 mb-1">Freelance — <span class="fw-semibold">Web &amp; Digital Marketing Specialist</span></h3>
+                                        <span class="small text-muted">Apr 2019 – Present</span>
+                                    </div>
+                                    <ul class="small mb-0">
+                                        <li>Digital marketing and website development for clients in e‑commerce, retail, B2B and property industries.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <h3 class="h6 mb-1">etyres, Cambridge — <span class="fw-semibold">Marketing Executive</span></h3>
+                                        <span class="small text-muted">Apr 2019 – Aug 2019</span>
+                                    </div>
+                                    <ul class="small mb-0">
+                                        <li>Wrote SEO‑rich content and product descriptions; maintained ERP/CRM data; compiled analytics for reports.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <h3 class="h6 mb-1">Addictive Merchandise, Cambridge — <span class="fw-semibold">Marketing Assistant</span></h3>
+                                        <span class="small text-muted">Feb 2017 – Apr 2019</span>
+                                    </div>
+                                    <ul class="small mb-0">
+                                        <li>Designed campaigns with Photoshop/Illustrator/HTML/CSS; researched platforms and managed CRM.</li>
+                                        <li>Led an e‑commerce project across 21 sites; developed consumer brands and go‑to‑market strategies.</li>
+                                    </ul>
+                                </div>
+                                <div class="mb-4">
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <h3 class="h6 mb-1">Addictive Interactive, Cambridge — <span class="fw-semibold">Web &amp; Social Media Apprentice</span></h3>
+                                        <span class="small text-muted">Sep 2015 – Feb 2017</span>
+                                    </div>
+                                    <ul class="small mb-0">
+                                        <li>Built responsive WordPress/Magento sites and trained users; created logos and optimised content.</li>
+                                        <li>Managed Facebook and YouTube channels.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <div class="d-flex justify-content-between flex-wrap">
+                                        <h3 class="h6 mb-1">G's Fresh, Barway — <span class="fw-semibold">Digital Media Assistant</span></h3>
+                                        <span class="small text-muted">Jul 2013 – Jul 2013</span>
+                                    </div>
+                                    <ul class="small mb-0">
+                                        <li>Year‑10 work experience: filmed a promo video, redesigned digital signage software, and retouched photos.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Certifications -->
+                    <section id="certs" class="mb-4">
+                        <h2 class="h4 section-title">Certifications</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <div class="row small g-2">
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-3 border rounded-3 h-100">
+                                            <div class="fw-semibold">MathWorks</div>
+                                            <ul class="mb-0">
+                                                <li>MATLAB Onramp – Sep 2025</li>
+                                                <li>Image Processing Onramp – Sep 2025</li>
+                                                <li>Computer Vision Onramp – Sep 2025</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="p-3 border rounded-3 h-100">
+                                            <div class="fw-semibold">Codecademy</div>
+                                            <ul class="mb-0">
+                                                <li>Learn the Command Line – Dec 2022</li>
+                                                <li>Learn Intermediate Python 3 – Sep 2022</li>
+                                                <li>Learn Python 3 – Jul 2022</li>
+                                                <li>Visualise Data with Python – Jul 2022</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Languages -->
+                    <section id="languages" class="mb-4">
+                        <h2 class="h4 section-title">Languages</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body small">
+                                <span class="chip">English — Native</span>
+                                <span class="chip">German — Elementary</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Interests -->
+                    <section id="interests" class="mb-4">
+                        <h2 class="h4 section-title">Interests</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body small">
+                                I enjoy road cycling, and I’ve recently taken up running with the goal of a future triathlon. I build high‑end custom PCs (glass, chrome, carbon‑fibre water‑cooling), experiment with new recipes and techniques in the kitchen, enjoy 3D printing, and go to the cinema regularly.
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-12 col-lg-4">
+                    <section id="skills" class="mb-4">
+                        <h2 class="h5 section-title">Key Skills</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body small">
+                                <div class="mb-3">
+                                    <div class="fw-semibold mb-1">Coding Languages</div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">C#</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Java</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">C</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Python</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">PHP</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="fw-semibold mb-1">Operating Systems</div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="chip">Windows</span>
+                                        <span class="chip">macOS</span>
+                                        <span class="chip">Linux (Arch, openSUSE, QTS, Ubuntu)</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="fw-semibold mb-1">Web Development</div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="chip">WordPress</span>
+                                        <span class="chip">Magento</span>
+                                        <span class="chip">HTML</span>
+                                        <span class="chip">CSS</span>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div class="fw-semibold mb-1">Digital Marketing</div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="chip">SEO</span>
+                                        <span class="chip">CRM</span>
+                                        <span class="chip">Google Analytics</span>
+                                        <span class="chip">Google Ads</span>
+                                        <span class="chip">Social (FB/IG)</span>
+                                        <span class="chip">Email (HTML/MailChimp)</span>
+                                        <span class="chip">E‑Commerce</span>
+                                        <span class="chip">B2B &amp; B2C</span>
+                                    </div>
+                                </div>
+                                <div class="mb-0">
+                                    <div class="fw-semibold mb-1">Design &amp; Technical</div>
+                                    <div class="d-flex flex-wrap gap-2">
+                                        <span class="chip">Photoshop</span>
+                                        <span class="chip">Illustrator</span>
+                                        <span class="chip">Premiere Pro</span>
+                                        <span class="chip">3D Printing/Modelling</span>
+                                        <span class="chip">Custom PCs</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="mb-4">
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body small">
+                                <div class="fw-semibold mb-1">Quick Links</div>
+                                <ul class="list-unstyled mb-0">
+                                    <li><a id="emailLink2" class="link-underline" href="#" aria-label="email">Email me</a></li>
+                                    <li><a class="link-underline" href="https://deroui.ch" target="_blank" rel="noopener">Website</a></li>
+                                    <li><a class="link-underline" href="https://deroui.ch/portfolio" target="_blank" rel="noopener">Portfolio</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="border-top py-4 small">
+        <div class="container d-flex flex-wrap gap-2 justify-content-between">
+            <span class="text-muted">© <span id="year"></span> Harry Derouich</span>
+            <span class="text-muted">Built with Bootstrap 5 · <a class="link-underline" href="#top">Back to top</a></span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        document.getElementById('updated').textContent = new Date().toLocaleDateString();
+
+        // Obfuscated email (base64): "harry@deroui.ch"
+        const e = atob('aGFycnlAZGVyb3VpLmNo');
+        ['emailLink', 'emailLink2'].forEach(id => {
+            const el = document.getElementById(id);
+            if (el) { el.href = 'mailto:' + e; el.textContent = e; }
+        });
+    </script>
+</body>
+</html>
