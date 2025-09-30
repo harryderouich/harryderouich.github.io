@@ -8,7 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --accent: #2563eb; /* blue-600 */
+            --accent: #2563eb;
         }
 
         body {
@@ -20,25 +20,9 @@
             background: linear-gradient(90deg,var(--accent),#22c55e,#eab308,#ef4444,#8b5cf6)
         }
 
-        .avatar {
-            width: 88px;
-            height: 88px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid rgba(0,0,0,.1)
-        }
-
         .section-title {
             font-weight: 700;
             letter-spacing: .2px
-        }
-
-        .badge-skill {
-            font-weight: 500
-        }
-
-        .muted {
-            opacity: .85
         }
 
         .chip {
@@ -103,10 +87,6 @@
             .t-item::before {
                 box-shadow: 0 0 0 3px rgba(37,99,235,.35)
             }
-
-            .muted {
-                opacity: .9
-            }
         }
 
         @media print {
@@ -155,7 +135,7 @@
     <div class="gradient-bar"></div>
     <nav id="cv-nav" class="navbar navbar-expand-lg sticky-top bg-body-tertiary border-bottom">
         <div class="container">
-            <a class="navbar-brand fw-semibold" href="#top">Harry Derouich</a>
+            <a class="navbar-brand fw-semibold" href="#top"><img src="/docs/assets/images/Harry Derouich.png" height="45"/></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems" aria-controls="navItems" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -169,6 +149,7 @@
                     <li class="nav-item"><a class="nav-link" href="#certs">Certifications</a></li>
                     <li class="nav-item"><a class="nav-link" href="#languages">Languages</a></li>
                     <li class="nav-item"><a class="nav-link" href="#interests">Interests</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#extracurriculars">Extracurriculars</a></li>
                 </ul>
             </div>
         </div>
@@ -181,22 +162,23 @@
                     <h1 class="display-5 fw-bold mb-2">Harry Derouich</h1>
                     <p class="lead mb-3">Computer Science Student · Web/Software Developer · Digital Marketing</p>
                     <div class="d-flex flex-wrap gap-2 small">
-                        <span class="chip"><strong>Location:</strong> 1 Foster Lane, Swaffham Prior, Cambridgeshire, CB25 0FA</span>
+                        <span class="chip"><strong>Location:</strong> Cambridge, United Kingdom</span>
                         <a id="emailLink" class="chip link-underline" href="#" aria-label="email">Email</a>
+                        <a class="chip link-underline" href="https://github.com/harryderouich" target="_blank" rel="noopener">GitHub</a>
+                        <a class="chip link-underline" href="https://www.linkedin.com/in/harryderouich/" target="_blank" rel="noopener">LinkedIn</a>
                         <a class="chip link-underline" href="https://deroui.ch" target="_blank" rel="noopener">deroui.ch</a>
                         <a class="chip link-underline" href="#" onclick="window.print()">Print / Save as PDF</a>
                         <noscript class="text-muted">Enable JavaScript to reveal email</noscript>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 text-lg-end">
-                    <div class="small text-muted">Updated: <span id="updated"></span></div>
-                </div>
             </div>
+        </div>
     </header>
 
     <main class="pb-5">
         <div class="container">
             <div class="row g-4">
+                <!-- Main column -->
                 <div class="col-12 col-lg-8">
                     <!-- Profile -->
                     <section id="profile" class="mb-4">
@@ -226,7 +208,7 @@
                                     </div>
                                     <div class="t-item mb-4">
                                         <div class="d-flex justify-content-between flex-wrap">
-                                            <h3 class="h6 mb-1">A-Level Mathematics – Oxford Online Learning (Distance)</h3>
+                                            <h3 class="h6 mb-1">A-Level Mathematics – Oxford Online Learning</h3>
                                             <span class="small text-muted">Oct 2022 – Jul 2023</span>
                                         </div>
                                     </div>
@@ -262,29 +244,29 @@
                         <div class="card border-0 shadow-sm">
                             <div class="card-body">
                                 <div class="mb-3">
-                                    <h3 class="h6 mb-1">Web Portfolio</h3>
-                                    <a class="small link-underline" href="https://deroui.ch/portfolio" target="_blank" rel="noopener">deroui.ch/portfolio</a>
-                                    <p class="small mb-0">Developed a range of web projects including eCommerce sites and informational platforms, showcasing web development, data management, and UX for clients across various industries.</p>
-                                </div>
-                                <div class="mb-3">
                                     <h3 class="h6 mb-1">Together Culture CRM – C#</h3>
                                     <a class="small link-underline" href="https://deroui.ch/tgcrm" target="_blank" rel="noopener">deroui.ch/tgcrm</a>
-                                    <p class="small mb-0">Led a small-team project for a live client brief: produced use-case diagrams, EERD, database schema, and contributed the majority of the code for a GUI-based CRM.</p>
+                                    <p class="small mb-0">My most recent and comprehensive project was developing a GUI-based CRM system in a small team for a live brief from a local company. I led the project, personally handled key planning elements such as creating the use case diagram, EERD, and database schema, and contributed most of our team's code.</p>
                                 </div>
                                 <div class="mb-3">
                                     <h3 class="h6 mb-1">Skystone Certificate Generator – Java</h3>
                                     <a class="small link-underline" href="https://deroui.ch/skystone" target="_blank" rel="noopener">deroui.ch/skystone</a>
-                                    <p class="small mb-0">Collaborative planning (wireframes, use cases), then solo implementation of a console application based on shared designs.</p>
+                                    <p class="small mb-0">This university assignment involved group collaboration during the planning phase, where we completed use case diagrams, wireframes, and other design elements. Following this, myself and each team member independently developed our own console-based application based on the shared planning.</p>
                                 </div>
                                 <div class="mb-3">
                                     <h3 class="h6 mb-1">CarSales Application – C</h3>
                                     <a class="small link-underline" href="https://deroui.ch/carsales" target="_blank" rel="noopener">deroui.ch/carsales</a>
-                                    <p class="small mb-0">Console-based car sales management app demonstrating procedural programming fundamentals.</p>
+                                    <p class="small mb-0">Console based car sales management application written in C, showcasing an understanding of procedural programming fundamentals.</p>
                                 </div>
-                                <div>
+                                <div class="mb-3">
                                     <h3 class="h6 mb-1">windPredict – Python</h3>
                                     <a class="small link-underline" href="https://deroui.ch/windpredict" target="_blank" rel="noopener">deroui.ch/windpredict</a>
-                                    <p class="small mb-0">Web-scraped BBC Weather data, performed EDA on wind speed, built visualisations and prepared features for predictive use to showcase technical skills and analytical ability.</p>
+                                    <p class="small mb-0">Developed a web scraper to collect weather data from BBC Weather and conducted exploratory data analysis to identify patterns in forecasted wind speed. The project, which involved data cleaning, visualisation, and preparation for predictive use, was created as part of my university application process to demonstrate my technical skills and analytical ability.</p>
+                                </div>
+                                <div>
+                                    <h3 class="h6 mb-1">Web Portfolio</h3>
+                                    <a class="small link-underline" href="https://deroui.ch/portfolio" target="_blank" rel="noopener">deroui.ch/portfolio</a>
+                                    <p class="small mb-0">Over the course of my employment and freelance work I have personally developed a range of web projects. These include eCommerce sites for motorsport companies and promotional merchandisers, as well as informational platforms for training providers and service businesses. These showcase my web development, data management, and user experience design skills for clients across various industries.</p>
                                 </div>
                             </div>
                         </div>
@@ -297,10 +279,15 @@
                             <div class="card-body">
                                 <div class="mb-4">
                                     <div class="d-flex justify-content-between flex-wrap">
-                                        <h3 class="h6 mb-1">Gateway Qualifications, Colchester/Remote — <span class="fw-semibold">XXXXXX Intern</span></h3>
+                                        <h3 class="h6 mb-1">Gateway Qualifications, Colchester/Remote — <span class="fw-semibold">Digital Projects & Analytics Intern</span></h3>
                                         <span class="small text-muted">May 2025 – Aug 2025</span>
                                     </div>
-                                    <p class="small mb-0">Description TBC</p>
+                                    <ul class="small mb-0">
+                                        <li>Solely managed a web performance audit project ahead of a full site rebuild, defining criteria, scope, and timelines independently.</li>
+                                        <li>Created and applied page-level evaluation frameworks using Google Analytics data, traffic behaviour, and content relevance.</li>
+                                        <li>Reported findings to senior staff with actionable recommendations influencing content consolidation and site structure decisions.</li>
+                                        <li>Maintained personal time tracking, remote workflow organisation, and regular stakeholder communication throughout.</li>
+                                    </ul>
                                 </div>
                                 <div class="mb-4">
                                     <div class="d-flex justify-content-between flex-wrap">
@@ -308,7 +295,7 @@
                                         <span class="small text-muted">Apr 2019 – Present</span>
                                     </div>
                                     <ul class="small mb-0">
-                                        <li>Digital marketing and website development for clients in e‑commerce, retail, B2B and property industries.</li>
+                                        <li>Digital marketing and website development for clients in the e-commerce, retail, B2B and property industries.</li>
                                     </ul>
                                 </div>
                                 <div class="mb-4">
@@ -317,7 +304,9 @@
                                         <span class="small text-muted">Apr 2019 – Aug 2019</span>
                                     </div>
                                     <ul class="small mb-0">
-                                        <li>Wrote SEO‑rich content and product descriptions; maintained ERP/CRM data; compiled analytics for reports.</li>
+                                        <li>Writing engaging and SEO-rich content, product descriptions, and articles, demonstrating strong communication and writing skills.</li>
+                                        <li>Maintaining data and resources within an ERP/CRM, highlighting organisational and data management skills.</li>
+                                        <li>Gathering and presenting statistics from various analytics platforms, emphasising analytical and presentation skills.</li>
                                     </ul>
                                 </div>
                                 <div class="mb-4">
@@ -326,8 +315,10 @@
                                         <span class="small text-muted">Feb 2017 – Apr 2019</span>
                                     </div>
                                     <ul class="small mb-0">
-                                        <li>Designed campaigns with Photoshop/Illustrator/HTML/CSS; researched platforms and managed CRM.</li>
-                                        <li>Led an e‑commerce project across 21 sites; developed consumer brands and go‑to‑market strategies.</li>
+                                        <li>Created designs and email campaigns using Photoshop, Illustrator, HTML, and CSS, showcasing creativity and technical skills.</li>
+                                        <li>Researched marketing platforms and managed a CRM, highlighting organisational skills.</li>
+                                        <li>Led an e-commerce project across 21 websites, reflecting leadership and project management skills.</li>
+                                        <li>Developed consumer brands, focusing on audience targeting and marketing strategy.</li>
                                     </ul>
                                 </div>
                                 <div class="mb-4">
@@ -336,8 +327,9 @@
                                         <span class="small text-muted">Sep 2015 – Feb 2017</span>
                                     </div>
                                     <ul class="small mb-0">
-                                        <li>Built responsive WordPress/Magento sites and trained users; created logos and optimised content.</li>
-                                        <li>Managed Facebook and YouTube channels.</li>
+                                        <li>Developed responsive sites using WordPress and Magento and trained users on these platforms.</li>
+                                        <li>Created logos and optimised web content with Adobe Photoshop.</li>
+                                        <li>Managed social media accounts on Facebook and YouTube.</li>
                                     </ul>
                                 </div>
                                 <div>
@@ -346,7 +338,7 @@
                                         <span class="small text-muted">Jul 2013 – Jul 2013</span>
                                     </div>
                                     <ul class="small mb-0">
-                                        <li>Year‑10 work experience: filmed a promo video, redesigned digital signage software, and retouched photos.</li>
+                                        <li>During my Year 10 work experience at G’s Fresh, I filmed a promotional video, redesigned digital signage software, and retouched employee photos.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -401,7 +393,23 @@
                         <h2 class="h4 section-title">Interests</h2>
                         <div class="card border-0 shadow-sm">
                             <div class="card-body small">
-                                I enjoy road cycling, and I’ve recently taken up running with the goal of a future triathlon. I build high‑end custom PCs (glass, chrome, carbon‑fibre water‑cooling), experiment with new recipes and techniques in the kitchen, enjoy 3D printing, and go to the cinema regularly.
+                                I enjoy road cycling, both in the UK and abroad. Additionally, I have recently taken up running with the goal of one day taking part in a triathlon. I enjoy building high-end custom PCs, incorporating exotic materials like glass, chrome, and carbon fibre tubing in custom watercooling loops. As a keen amateur cook, I love experimenting with new recipes and techniques in the kitchen. I have a deep interest in 3D printing and I also enjoy going to the cinema regularly.
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Extracurriculars -->
+                    <section id="extracurriculars" class="mb-4">
+                        <h2 class="h4 section-title">Extracurriculars</h2>
+                        <div class="card border-0 shadow-sm">
+                            <div class="card-body">
+                                <ul class="small mb-0">
+                                    <li><strong>Computer Science Society</strong> — President <span class="text-muted">(2025 – present)</span></li>
+                                    <li><strong>eSports Society</strong> — Social Media Administrator <span class="text-muted">(2025 – present)</span></li>
+                                    <li><strong>Photography Society</strong> — PR Officer <span class="text-muted">(2024 – 2025)</span></li>
+                                    <li><strong>eSports Society</strong> — Member <span class="text-muted">(2023 – present)</span></li>
+                                    <li><strong>ARU Boat Club (Rowing)</strong> — Member <span class="text-muted">(2023 – 2024)</span></li>
+                                </ul>
                             </div>
                         </div>
                     </section>
@@ -416,11 +424,11 @@
                                 <div class="mb-3">
                                     <div class="fw-semibold mb-1">Coding Languages</div>
                                     <div class="d-flex flex-wrap gap-2">
-                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">C#</span>
-                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Java</span>
-                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">C</span>
-                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">Python</span>
-                                        <span class="badge bg-primary-subtle text-primary-emphasis badge-skill">PHP</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis">C#</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis">Java</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis">C</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis">Python</span>
+                                        <span class="badge bg-primary-subtle text-primary-emphasis">PHP</span>
                                     </div>
                                 </div>
                                 <div class="mb-3">
@@ -440,8 +448,8 @@
                                         <span class="chip">CSS</span>
                                     </div>
                                 </div>
-                                <div class="mb-3">
-                                    <div class="fw-semibold mb-1">Digital Marketing</div>
+                                <div class="mb-0">
+                                    <div class="fw-semibold mb-1">Digital Marketing &amp; Design</div>
                                     <div class="d-flex flex-wrap gap-2">
                                         <span class="chip">SEO</span>
                                         <span class="chip">CRM</span>
@@ -449,18 +457,9 @@
                                         <span class="chip">Google Ads</span>
                                         <span class="chip">Social (FB/IG)</span>
                                         <span class="chip">Email (HTML/MailChimp)</span>
-                                        <span class="chip">E‑Commerce</span>
-                                        <span class="chip">B2B &amp; B2C</span>
-                                    </div>
-                                </div>
-                                <div class="mb-0">
-                                    <div class="fw-semibold mb-1">Design &amp; Technical</div>
-                                    <div class="d-flex flex-wrap gap-2">
                                         <span class="chip">Photoshop</span>
                                         <span class="chip">Illustrator</span>
                                         <span class="chip">Premiere Pro</span>
-                                        <span class="chip">3D Printing/Modelling</span>
-                                        <span class="chip">Custom PCs</span>
                                     </div>
                                 </div>
                             </div>
@@ -486,8 +485,8 @@
 
     <footer class="border-top py-4 small">
         <div class="container d-flex flex-wrap gap-2 justify-content-between">
-            <span class="text-muted">© <span id="year"></span> Harry Derouich</span>
-            <span class="text-muted">Built with Bootstrap 5 · <a class="link-underline" href="#top">Back to top</a></span>
+            <span class="text-muted" style="color: gray !important;">© <span id="year"></span> Harry Derouich</span>
+            <span class="text-muted"><a class="link-underline" href="#top">Back to top</a></span>
         </div>
     </footer>
 
@@ -495,7 +494,6 @@
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
         document.getElementById('updated').textContent = new Date().toLocaleDateString();
-
         // Obfuscated email (base64): "harry@deroui.ch"
         const e = atob('aGFycnlAZGVyb3VpLmNo');
         ['emailLink', 'emailLink2'].forEach(id => {
